@@ -1,58 +1,324 @@
+import {
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiCplusplus,
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiFirebase,
+  SiMongodb,
+  SiMysql,
+  SiVercel,
+  SiSwift,
+  SiRedux,
+} from 'react-icons/si';
+import { FaJava, FaMobileAlt } from 'react-icons/fa';
 import styles from '@/styles/AboutPage.module.css';
 
 const AboutPage = () => {
+  const programmingLanguages = [
+    { name: 'TypeScript', icon: SiTypescript },
+    { name: 'JavaScript', icon: SiJavascript },
+    { name: 'Python', icon: SiPython },
+    { name: 'Java', icon: FaJava },
+    { name: 'C++', icon: SiCplusplus },
+  ];
+
+  const frameworks = [
+    { name: 'React Native', icon: SiReact },
+    { name: 'Expo', icon: FaMobileAlt },
+    { name: 'React', icon: SiReact },
+    { name: 'Next.js', icon: SiNextdotjs },
+    { name: 'Node.js', icon: SiNodedotjs },
+    { name: 'Express.js', icon: SiNodedotjs },
+    { name: 'Swift/UIKit', icon: SiSwift },
+  ];
+
+  const tools = [
+    { name: 'Redux Toolkit', icon: SiRedux },
+    { name: 'Tanstack Query', icon: SiReact },
+    { name: 'React Hook Form', icon: SiReact },
+  ];
+
+  const databases = [
+    { name: 'Firebase', icon: SiFirebase },
+    { name: 'MongoDB', icon: SiMongodb },
+    { name: 'MySQL', icon: SiMysql },
+  ];
+
+  const cicd = [
+    { name: 'Expo EAS', icon: FaMobileAlt },
+    { name: 'Vercel', icon: SiVercel },
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Nitin Ranganath</h1>
+        <h1 className={styles.title}>Muhammad Tayyab Saeed</h1>
         <div className={styles.subtitle}>Software Engineer</div>
 
         <div className={styles.aboutContent}>
           <section className={styles.section}>
             <p className={styles.paragraph}>
-              Hey! I&apos;m a software engineer from Mumbai, India. I primarily
-              work with JavaScript / TypeScript and the React ecosystem.
-            </p>
-            <p className={styles.paragraph}>
-              I&apos;m focused on frontend development with React, but
-              you&apos;ll also find me working with Node.js, MongoDB and Express
-              while building the backend for my personal projects.
+              Software engineer with 2+ years of experience building production
+              mobile apps using React Native, Expo, and TypeScript. Focused on
+              clean front-end architecture, smooth UX, and reliable API/analytics
+              integrations while collaborating closely with product, design, QA,
+              and backend teams.
             </p>
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Experience</h2>
-            <p className={styles.paragraph}>
-              Currently at <span className={styles.highlight}>Tessact</span> as
-              Software Engineer 2, working with a lean team of 4 frontend
-              engineers to build a next-gen video creation suite for the people
-              of video.
-            </p>
-            <p className={styles.paragraph}>
-              I&apos;ve been leading the development efforts for bringing
-              collaborative video reviewing and editing to the platform. I also
-              maintain our in-house component library, icon library and website.
-            </p>
+            <h2 className={styles.sectionTitle}>Education</h2>
+            <div style={{ marginBottom: '1rem' }}>
+              <h3
+                style={{
+                  fontSize: '1.1rem',
+                  marginBottom: '0.3rem',
+                  color: 'var(--accent-color)',
+                }}
+              >
+                BSc Information Technology
+              </h3>
+              <p className={styles.paragraph} style={{ margin: 0 }}>
+                Punjab University College of Information Technology
+              </p>
+              <p
+                className={styles.paragraph}
+                style={{ fontSize: '0.9rem', opacity: 0.8, margin: '0.2rem 0' }}
+              >
+                Oct 2019 - July 2023 · CGPA: 3.48/4.00
+              </p>
+            </div>
+            <div style={{ marginTop: '1.5rem' }}>
+              <h3
+                style={{
+                  fontSize: '1.1rem',
+                  marginBottom: '0.3rem',
+                  color: 'var(--accent-color)',
+                }}
+              >
+                IELTS Certification
+              </h3>
+              <p className={styles.paragraph} style={{ margin: 0 }}>
+                Overall Band: 7.5 (CEFR C1 - Advanced) · Sep 2025
+              </p>
+            </div>
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Writing</h2>
-            <p className={styles.paragraph}>
-              I&apos;ve had the pleasure of writing for some amazing
-              publications like{' '}
-              <span className={styles.highlight}>100ms Blog</span>,{' '}
-              <span className={styles.highlight}>LogRocket Blog</span>,{' '}
-              <span className={styles.highlight}>DEV.to</span> and more as a
-              freelance technical author.
-            </p>
-          </section>
+            <h2 className={styles.sectionTitle}>Skills & Technologies</h2>
 
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Beyond Code</h2>
-            <p className={styles.paragraph}>
-              Aside from programming and writing, I like to read a good
-              dystopian novel, listen to calm piano music or just laze around.
-            </p>
+            <div style={{ marginBottom: '2rem' }}>
+              <h3
+                style={{
+                  fontSize: '1rem',
+                  marginBottom: '1rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                Programming Languages
+              </h3>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
+                  gap: '1rem',
+                }}
+              >
+                {programmingLanguages.map((lang) => (
+                  <div
+                    key={lang.name}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '1rem',
+                      background: 'rgba(127, 127, 127, 0.1)',
+                      borderRadius: '8px',
+                      border: '1px solid rgba(127, 127, 127, 0.2)',
+                    }}
+                  >
+                    <lang.icon size={32} />
+                    <span style={{ fontSize: '0.85rem', textAlign: 'center' }}>
+                      {lang.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '2rem' }}>
+              <h3
+                style={{
+                  fontSize: '1rem',
+                  marginBottom: '1rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                Frameworks
+              </h3>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
+                  gap: '1rem',
+                }}
+              >
+                {frameworks.map((framework) => (
+                  <div
+                    key={framework.name}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '1rem',
+                      background: 'rgba(127, 127, 127, 0.1)',
+                      borderRadius: '8px',
+                      border: '1px solid rgba(127, 127, 127, 0.2)',
+                    }}
+                  >
+                    <framework.icon size={32} />
+                    <span style={{ fontSize: '0.85rem', textAlign: 'center' }}>
+                      {framework.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '2rem' }}>
+              <h3
+                style={{
+                  fontSize: '1rem',
+                  marginBottom: '1rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                Tools & Libraries
+              </h3>
+              <div
+                style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.75rem',
+                }}
+              >
+                {tools.map((tool) => (
+                  <span
+                    key={tool.name}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '0.5rem 1rem',
+                      background: 'rgba(127, 127, 127, 0.1)',
+                      border: '1px solid rgba(127, 127, 127, 0.2)',
+                      borderRadius: '6px',
+                      fontSize: '0.9rem',
+                    }}
+                  >
+                    <tool.icon size={20} />
+                    {tool.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '2rem' }}>
+              <h3
+                style={{
+                  fontSize: '1rem',
+                  marginBottom: '1rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                Databases
+              </h3>
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fill, minmax(120px, 1fr))',
+                  gap: '1rem',
+                }}
+              >
+                {databases.map((db) => (
+                  <div
+                    key={db.name}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '1rem',
+                      background: 'rgba(127, 127, 127, 0.1)',
+                      borderRadius: '8px',
+                      border: '1px solid rgba(127, 127, 127, 0.2)',
+                    }}
+                  >
+                    <db.icon size={32} />
+                    <span style={{ fontSize: '0.85rem', textAlign: 'center' }}>
+                      {db.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div style={{ marginBottom: '2rem' }}>
+              <h3
+                style={{
+                  fontSize: '1rem',
+                  marginBottom: '1rem',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                CI/CD & Deployments
+              </h3>
+              <div
+                style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.75rem',
+                }}
+              >
+                {cicd.map((item) => (
+                  <span
+                    key={item.name}
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                      padding: '0.5rem 1rem',
+                      background: 'rgba(127, 127, 127, 0.1)',
+                      border: '1px solid rgba(127, 127, 127, 0.2)',
+                      borderRadius: '6px',
+                      fontSize: '0.9rem',
+                    }}
+                  >
+                    <item.icon size={20} />
+                    {item.name}
+                  </span>
+                ))}
+                <span
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.5rem 1rem',
+                    background: 'rgba(127, 127, 127, 0.1)',
+                    border: '1px solid rgba(127, 127, 127, 0.2)',
+                    borderRadius: '6px',
+                    fontSize: '0.9rem',
+                  }}
+                >
+                  App Store & Play Store
+                </span>
+              </div>
+            </div>
           </section>
         </div>
       </div>

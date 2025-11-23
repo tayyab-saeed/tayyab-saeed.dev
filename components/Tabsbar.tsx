@@ -10,9 +10,14 @@ const Tabsbar = () => {
       <Tab icon="/logos/css_icon.svg" filename="contact.css" path="/contact" />
       <Tab icon="/logos/js_icon.svg" filename="projects.js" path="/projects" />
       <Tab
-        icon="/logos/json_icon.svg"
-        filename="articles.json"
-        path="/articles"
+        icon="/logos/react_icon.svg"
+        filename="experience.tsx"
+        path="/experience"
+      />
+      <Tab
+        icon="/logos/react_icon.svg"
+        filename="achievements.tsx"
+        path="/achievements"
       />
       <Tab
         icon="/logos/markdown_icon.svg"

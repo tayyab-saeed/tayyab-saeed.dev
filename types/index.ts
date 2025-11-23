@@ -13,8 +13,17 @@ export interface Project {
   title: string;
   description: string;
   logo: string;
-  link: string;
+  link?: string;
   slug: string;
+  category: 'professional' | 'research' | 'hackathon';
+  contributions: string[];
+  technologies: string[];
+  links?: {
+    appStore?: string;
+    playStore?: string;
+    github?: string;
+    website?: string;
+  };
 }
 
 export interface Repo {

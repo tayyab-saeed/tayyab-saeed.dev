@@ -2,39 +2,24 @@ import styles from '@/styles/ContactCode.module.css';
 
 const contactItems = [
   {
-    social: 'website',
-    link: 'nitinranganath.com',
-    href: 'https://nitinranganath.com',
+    social: 'email',
+    link: 'tayyab.saeed534@gmail.com',
+    href: 'mailto:tayyab.saeed534@gmail.com',
   },
   {
-    social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    social: 'phone',
+    link: '+92 315 4458232',
+    href: 'tel:+923154458232',
   },
   {
     social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    link: 'tayyab-saeed',
+    href: 'https://github.com/tayyab-saeed',
   },
   {
     social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
-  },
-  {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'peerlist',
-    link: 'nitinranganath',
-    href: 'https://peerlist.io/nitinranganath',
+    link: 'muhammad-tayyab-saeed',
+    href: 'https://www.linkedin.com/in/muhammad-tayyab-saeed/',
   },
 ];
 

@@ -1,7 +1,9 @@
-# vscode-portfolio
-[![Open is Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/itsnitinr/vscode-portfolio)
+# Muhammad Tayyab Saeed - Portfolio
+[![Open is Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/tayyab-saeed/vscode-portfolio)
 
 A Visual Studio Code themed developer portfolio website built with Next.js and deployed on Vercel.
+
+Software engineer with 2+ years of experience building production mobile apps using React Native, Expo, and TypeScript.
 
 ![vscode-portfolio banner](https://imgur.com/JXJ9mpO.gif)
 
