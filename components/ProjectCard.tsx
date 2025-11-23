@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Project } from '@/types';
 
@@ -10,12 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.card}
-    >
+    <Link href={`/projects/${project.slug}`} className={styles.card}>
       <div className={styles.content}>
         <div className={styles.logoWrapper}>
           <Image
@@ -29,7 +25,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.description}>{project.description}</p>
       </div>
-    </a>
+    </Link>
   );
 };
 

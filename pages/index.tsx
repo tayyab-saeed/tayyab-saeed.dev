@@ -14,9 +14,9 @@ export default function HomePage() {
       type: 'variable',
     },
     { code: '  const developerInfo = {', type: 'variable' },
-    { code: "    name: 'Nitin Ranganath',", type: 'array-item' },
-    { code: "    role: 'Full Stack Developer',", type: 'array-item' },
-    { code: "    bio: 'Building modern web experiences'", type: 'array-item' },
+    { code: "    name: 'Muhammad Tayyab Saeed',", type: 'array-item' },
+    { code: "    role: 'Software Engineer',", type: 'array-item' },
+    { code: "    bio: 'Building production mobile apps'", type: 'array-item' },
     { code: '  };', type: 'array-end' },
     { code: '', type: 'blank' },
     { code: '  useEffect(() => {', type: 'nested-function' },
@@ -91,14 +91,15 @@ export default function HomePage() {
 
         <div className={styles.infoSection}>
           <h1 className={styles.developerName}>
-            Nitin <span className={styles.accentText}>Ranganath</span>
+            Muhammad <span className={styles.accentText}>Tayyab</span> Saeed
           </h1>
 
-          <div className={styles.developerRole}>Full Stack Web Developer</div>
+          <div className={styles.developerRole}>Software Engineer</div>
 
           <p className={styles.bio}>
-            I build elegant, responsive web applications with modern
-            technologies. Focused on clean code and intuitive user experiences.
+            Software engineer with 2+ years of experience building production mobile apps 
+            using React Native, Expo, and TypeScript. Focused on clean front-end architecture, 
+            smooth UX, and reliable API/analytics integrations.
           </p>
 
           <div className={styles.actionLinks}>
