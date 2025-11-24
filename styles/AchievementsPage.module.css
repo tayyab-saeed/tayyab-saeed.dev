@@ -1,0 +1,157 @@
+.container {
+  max-width: 900px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  color: var(--text-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+  letter-spacing: -0.03em;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.aboutContent {
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
+}
+
+.timelineContainer {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timelineContainer::before {
+  content: '';
+  position: absolute;
+  left: 0.43rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accent-color);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -2.4375rem;
+  top: 0.4rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: 3px solid var(--bg-primary);
+  z-index: 1;
+}
+
+.experienceTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.pointsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pointsList li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.pointsList li::before {
+  content: '•';
+  position: absolute;
+  left: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.pointsList li:last-child {
+  margin-bottom: 0;
+}
+
+.linkContainer {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.linkContainer a {
+  color: var(--accent-color);
+  margin-right: 1rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.linkContainer a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .timelineContainer {
+    padding-left: 1.5rem;
+  }
+
+  .experienceTitle {
+    font-size: 1rem;
+  }
+
+  .pointsList li {
+    font-size: 0.9rem;
+  }
+}
+

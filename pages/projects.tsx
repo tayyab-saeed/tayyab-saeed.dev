@@ -37,6 +37,25 @@ const ProjectsPage = () => {
         </div>
       )}
 
+{hackathonProjects.length > 0 && (
+        <div style={{ marginBottom: '3rem' }}>
+          <h2
+            style={{
+              fontSize: '1.5rem',
+              marginBottom: '1rem',
+              color: 'var(--accent-color)',
+            }}
+          >
+            Hackathon Project
+          </h2>
+          <div className={styles.container}>
+            {hackathonProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
+      )}
+
       {researchProjects.length > 0 && (
         <div style={{ marginBottom: '3rem' }}>
           <h2
@@ -56,24 +75,7 @@ const ProjectsPage = () => {
         </div>
       )}
 
-      {hackathonProjects.length > 0 && (
-        <div style={{ marginBottom: '3rem' }}>
-          <h2
-            style={{
-              fontSize: '1.5rem',
-              marginBottom: '1rem',
-              color: 'var(--accent-color)',
-            }}
-          >
-            Hackathon Project
-          </h2>
-          <div className={styles.container}>
-            {hackathonProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
-            ))}
-          </div>
-        </div>
-      )}
+     
     </div>
   );
 };
