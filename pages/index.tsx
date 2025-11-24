@@ -97,14 +97,17 @@ export default function HomePage() {
           <div className={styles.developerRole}>Software Engineer</div>
 
           <p className={styles.bio}>
-            Software engineer with 2+ years of experience building production mobile apps 
-            using React Native, Expo, and TypeScript. Focused on clean front-end architecture, 
-            smooth UX, and reliable API/analytics integrations.
+            I build production-grade mobile apps that delight users and drive results. 
+            Specializing in React Native, Expo, and TypeScript, I turn complex ideas into 
+            elegant, high-performance solutions.
           </p>
 
           <div className={styles.actionLinks}>
             <Link href="/projects" className={styles.primaryLink}>
               View Projects <VscArrowRight />
+            </Link>
+            <Link href="/Resume_Tayyab_Saeed.pdf" target="_blank" rel="noopener noreferrer" className={styles.secondaryLink}>
+              View Resume <VscArrowRight />
             </Link>
           </div>
         </div>
