@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { VscArrowLeft, VscLinkExternal } from 'react-icons/vsc';
 import { projects } from '@/data/projects';
 import { Project } from '@/types';
+import ProjectCarousel from '@/components/ProjectCarousel';
 
 import styles from '@/styles/ProjectsPage.module.css';
 
@@ -110,6 +111,13 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
           </div>
         )}
 
+        {project.screenshots && project.screenshots.length > 0 && (
+          <ProjectCarousel 
+            screenshots={project.screenshots}
+            projectTitle={project.title}
+          />
+        )}
+
         <section style={{ marginTop: '3rem' }}>
           <h2
             style={{
@@ -122,9 +130,11 @@ const ProjectDetail = ({ project }: ProjectDetailProps) => {
           </h2>
           <ul style={{ lineHeight: '1.8', paddingLeft: '1.5rem' }}>
             {project.contributions.map((contribution, index) => (
-              <li key={index} style={{ marginBottom: '0.8rem' }}>
-                {contribution}
-              </li>
+              <li 
+                key={index} 
+                style={{ marginBottom: '0.8rem' }}
+                dangerouslySetInnerHTML={{ __html: contribution }}
+              />
             ))}
           </ul>
         </section>

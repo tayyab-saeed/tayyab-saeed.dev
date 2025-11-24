@@ -61,7 +61,7 @@ const AboutPage = () => {
         <div className={styles.aboutContent}>
           <section className={styles.section}>
             <p className={styles.paragraph}>
-              Software engineer with 2+ years of experience building production
+              I'm a software engineer with 2+ years of experience building production
               mobile apps using React Native, Expo, and TypeScript. Focused on
               clean front-end architecture, smooth UX, and reliable API/analytics
               integrations while collaborating closely with product, design, QA,
@@ -70,7 +70,7 @@ const AboutPage = () => {
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Education</h2>
+            <h2 className={styles.sectionTitle} style={{ textDecoration: 'underline' }}>Education</h2>
             <div style={{ marginBottom: '1rem' }}>
               <h3
                 style={{
@@ -88,10 +88,14 @@ const AboutPage = () => {
                 className={styles.paragraph}
                 style={{ fontSize: '0.9rem', opacity: 0.8, margin: '0.2rem 0' }}
               >
-                Oct 2019 - July 2023 · CGPA: 3.48/4.00
+                Oct 2019 - July 2023 · CGPA: <strong>3.48</strong>/4.00
               </p>
             </div>
-            <div style={{ marginTop: '1.5rem' }}>
+          </section>
+
+          <section className={styles.section}>
+            <h2 className={styles.sectionTitle} style={{ textDecoration: 'underline' }}>Certifications</h2>
+            <div style={{ marginBottom: '1rem' }}>
               <h3
                 style={{
                   fontSize: '1.1rem',
@@ -102,13 +106,13 @@ const AboutPage = () => {
                 IELTS Certification
               </h3>
               <p className={styles.paragraph} style={{ margin: 0 }}>
-                Overall Band: 7.5 (CEFR C1 - Advanced) · Sep 2025
+                Overall Band: <strong>7.5</strong> (CEFR C1 - Advanced) · Sep 2025
               </p>
             </div>
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Skills & Technologies</h2>
+            <h2 className={styles.sectionTitle} style={{ textDecoration: 'underline' }}>Skills & Technologies</h2>
 
             <div style={{ marginBottom: '2rem' }}>
               <h3

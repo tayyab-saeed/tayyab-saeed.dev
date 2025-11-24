@@ -36,7 +36,14 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
               priority
             />
             <div className={styles.userInfo}>
-              <h2 className={styles.username}>{user.login}</h2>
+              <a
+                href={user.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.usernameLink}
+              >
+                <h2 className={styles.username}>{user.login}</h2>
+              </a>
               <div className={styles.stats}>
                 <div className={styles.statItem}>
                   <VscRepo className={styles.statIcon} />
@@ -52,7 +59,7 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
         </div>
 
         <div className={styles.sectionHeader}>
-          <h3 className={styles.sectionTitle}>Popular Repositories</h3>
+          <h3 className={styles.sectionTitle}>Public Repositories</h3>
         </div>
         <div className={styles.reposContainer}>
           {repos.map((repo) => (
@@ -85,10 +92,14 @@ export async function getStaticProps() {
   );
   const user = await userRes.json();
 
+  // Fetch only the airwatch-mvp repository
   const repoRes = await fetch(
-    `https://api.github.com/users/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/repos?sort=pushed&per_page=6`
+    `https://api.github.com/repos/${process.env.NEXT_PUBLIC_GITHUB_USERNAME}/airwatch-mvp`
   );
-  const repos = await repoRes.json();
+  const repo = await repoRes.json();
+
+  // Return as an array with single repository
+  const repos = repo.id ? [repo] : [];
 
   return {
     props: { title: 'GitHub', repos, user },

@@ -24,6 +24,7 @@ export interface Project {
     github?: string;
     website?: string;
   };
+  screenshots?: string[];
 }
 
 export interface Repo {
@@ -43,4 +44,5 @@ export interface User {
   avatar_url: string;
   public_repos: number;
   followers: number;
+  html_url: string;
 }

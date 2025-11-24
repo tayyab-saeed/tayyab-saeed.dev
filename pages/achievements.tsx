@@ -1,4 +1,4 @@
-import styles from '@/styles/AboutPage.module.css';
+import styles from '@/styles/AchievementsPage.module.css';
 
 const AchievementsPage = () => {
   return (
@@ -11,132 +11,165 @@ const AchievementsPage = () => {
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Teaching & Volunteer Experience</h2>
             
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                Research Volunteer - Nitrogen Estimation App
-              </h3>
-              <p className={styles.paragraph}>
-                Working with Dr. Muhammad Hassan Khan to turn a computer-vision model into a farmer-facing mobile app.
-                Leading UX design, capture flows, audio prompts, and localization to make the app accessible for low-literacy
-                users. Designed nitrogen data visualizations and recommendations to help farmers interpret model outputs
-                and choose appropriate fertiliser actions.
-              </p>
-            </div>
+            <div className={styles.timelineContainer}>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  Research Volunteer - Nitrogen Estimation App
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    Leading <strong>UX design</strong> for farmer-facing mobile app with Dr. Muhammad Hassan Khan
+                  </li>
+                  <li>
+                    Created accessible flows with audio prompts and <strong>localization</strong> for low-literacy users
+                  </li>
+                  <li>
+                    Designed nitrogen data <strong>visualizations</strong> to help farmers interpret model outputs
+                  </li>
+                </ul>
+              </div>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                Section Leader Mentor - Stanford Code in Place 2025
-              </h3>
-              <p className={styles.paragraph}>
-                Mentoring global learners in Python through weekly sessions and guiding them to complete final projects.
-                Part of Stanford&apos;s free online introductory programming course reaching thousands of students worldwide.
-                <a 
-                  href="https://codeinplace.stanford.edu" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}
-                >
-                  (certificate)
-                </a>
-              </p>
-            </div>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  Section Leader Mentor - Stanford Code in Place 2025
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    Mentored global learners in Python for <strong>30+</strong> hours during 6-week Stanford-led program
+                  </li>
+                  <li>
+                    Delivered 1-hour <strong>1:1 sessions</strong> with 4+ international students weekly
+                  </li>
+                </ul>
+                <div className={styles.linkContainer}>
+                  <a 
+                    href="https://digitalcredential.stanford.edu/check/994D9FDF44F9C637182E049A227CFBCD115B3D0FC6DDA6D185E7FBA27FF5BFEFWi9GamduRE0rSW1RaEU5bll5VW41VWZkNjRxWGRNQzVlSzVEQlBBWXhlVnBlcEhR" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    (certificate)
+                  </a>
+                </div>
+              </div>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                Teaching Assistant - PUCIT
-              </h3>
-              <p className={styles.paragraph}>
-                Delivered 100+ hours of labs for Introduction to Computing (ITC) and Data Structures & Algorithms (DSA).
-                Mentored students in core computer science concepts, helped evaluate assignments and projects, and provided
-                one-on-one support to improve understanding of fundamental programming concepts.
-              </p>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  Teaching Assistant - PUCIT
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    Delivered <strong>100+</strong> hours of teaching support across two core CS courses (ITC, DSA)
+                  </li>
+                  <li>
+                    Conducted <strong>lab sessions</strong> and provided mentorship to strengthen programming skills
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
 
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>International Hackathons & Competitions</h2>
             
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                NASA International Space Apps Challenge 2025
-              </h3>
-              <p className={styles.paragraph}>
-                Led a team of 4 to build <strong>Airwatch</strong>, an MVP web app visualising NASA TEMPO-based air-quality
-                forecasts in real time. Built the entire front-end using Next.js, Ant Design, and Mapbox with interactive
-                maps and charts for viewing regional air-quality trends.
-                <a 
-                  href="https://airwatch.health" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}
-                >
-                  (see project)
-                </a>
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}
-                >
-                  (certificate)
-                </a>
-              </p>
-            </div>
+            <div className={styles.timelineContainer}>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  NASA International Space Apps Challenge 2025
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    <strong>Led</strong> team of 4 to build Airwatch MVP for NASA TEMPO air-quality forecasts
+                  </li>
+                  <li>
+                    Built entire <strong>front-end</strong> mainly using Next.js, Ant Design, and Mapbox
+                  </li>
+                </ul>
+                <div className={styles.linkContainer}>
+                  <a 
+                    href="https://airwatch.health" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    (see project)
+                  </a>
+                  <a 
+                    href="https://drive.google.com/file/d/1R_A7oHt8lPRhg79bZJWtkXAcv5LR2zBb/view?usp=sharing" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    (certificate)
+                  </a>
+                </div>
+              </div>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                Hacktoberfest 2025
-              </h3>
-              <p className={styles.paragraph}>
-                Completed 6 merged pull requests across multiple open-source projects in October 2025, finishing in the
-                first 10,000 contributors globally and earning the <strong>Supercontributor badge</strong>. Contributed
-                to diverse projects including documentation improvements, bug fixes, and feature additions.
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}
-                >
-                  (see profile)
-                </a>
-              </p>
-            </div>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  Hacktoberfest 2025
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    Completed <strong>6</strong> merged pull requests across multiple open-source projects
+                  </li>
+                  <li>
+                    Finished in <strong>top 10,000</strong> contributors globally, earning <strong>Supercontributor</strong> badge
+                  </li>
+                </ul>
+                <div className={styles.linkContainer}>
+                  <a 
+                    href="https://www.linkedin.com/feed/update/urn:li:activity:7391474324152586240/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    (see here)
+                  </a>
+                </div>
+              </div>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                Harvard CS50x Puzzle Day 2025
-              </h3>
-              <p className={styles.paragraph}>
-                Won with a <strong>perfect 9/9 score</strong>, ranking among top global teams out of 12,700+ participants.
-                Solved all puzzles requiring logical reasoning, pattern recognition, and algorithmic thinking under time
-                constraints.
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}
-                >
-                  (certificate)
-                </a>
-              </p>
-            </div>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  Harvard CS50x Puzzle Day 2025
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    Won with <strong>perfect 9/9</strong> score among 12,700+ participants
+                  </li>
+                  <li>
+                    Solved puzzles requiring <strong>logical</strong> reasoning and creative problem solving
+                  </li>
+                </ul>
+                <div className={styles.linkContainer}>
+                  <a 
+                    href="https://certificates.cs50.io/49e27a6b-2545-4737-89ff-d7928fcc2f59.pdf?size=letter" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    (certificate)
+                  </a>
+                </div>
+              </div>
 
-            <div style={{ marginBottom: '1.5rem' }}>
-              <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: 'var(--accent-color)' }}>
-                MIT Informatics Tournament Spring 2025
-              </h3>
-              <p className={styles.paragraph}>
-                Placed <strong>213th globally</strong> in Round 1, sharpening contest-style algorithmic problem solving
-                under timed constraints. Competed against students and professionals worldwide in computational thinking challenges.
-                <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  style={{ marginLeft: '0.5rem', color: 'var(--accent-color)' }}
-                >
-                  (see results)
-                </a>
-              </p>
+              <div className={styles.timelineItem}>
+                <h3 className={styles.experienceTitle}>
+                  MIT Informatics Tournament Spring 2025
+                </h3>
+                <ul className={styles.pointsList}>
+                  <li>
+                    Placed <strong>213th globally</strong> in Round 1 out of thousands of competitors
+                  </li>
+                  <li>
+                    Competed in <strong>computational</strong> thinking challenges under time constraints
+                  </li>
+                </ul>
+                <div className={styles.linkContainer}>
+                  <a 
+                    href="https://www.linkedin.com/posts/muhammad-tayyab-saeed_mitinformatics-codingcompetition-qualified-activity-7315468021655908353-O8Et" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    (see here)
+                  </a>
+                </div>
+              </div>
             </div>
           </section>
         </div>
