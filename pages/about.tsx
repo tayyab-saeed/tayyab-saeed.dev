@@ -61,7 +61,7 @@ const AboutPage = () => {
         <div className={styles.aboutContent}>
           <section className={styles.section}>
             <p className={styles.paragraph}>
-              I'm a software engineer with 2+ years of experience building production
+              I&apos;m a software engineer with 2+ years of experience building production
               mobile apps using React Native, Expo, and TypeScript. Focused on
               clean front-end architecture, smooth UX, and reliable API/analytics
               integrations while collaborating closely with product, design, QA,
