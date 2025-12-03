@@ -97,8 +97,8 @@ export default function HomePage() {
           <div className={styles.developerRole}>Software Engineer</div>
 
           <p className={styles.bio}>
-            I build production-grade mobile apps that delight users and drive results. 
-            Specializing in React Native, Expo, and TypeScript, I turn complex ideas into 
+            I build production-grade web and mobile apps that delight users and drive results. 
+            Specializing in ReactJS, React Native, Expo, Next.js. I turn complex ideas into 
             elegant, high-performance solutions.
           </p>
 
