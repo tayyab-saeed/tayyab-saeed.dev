@@ -94,7 +94,7 @@ const AboutPage = () => {
                 className={styles.paragraph}
                 style={{ fontSize: "0.9rem", opacity: 0.8, margin: "0.2rem 0" }}
               >
-                Oct 2019 - July 2023 · CGPA: <strong>3.48</strong>/4.00
+                CGPA: <strong>3.48</strong>/4.00
               </p>
             </div>
           </section>

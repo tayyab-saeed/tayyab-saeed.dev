@@ -9,7 +9,7 @@ export const projects: Project[] = [
     slug: 'profolio',
     category: 'professional',
     contributions: [
-      'Delivered <strong>30+ features</strong> as a core React Native engineer on Profolio\'s upgrade from v2.0 to v3.0, spanning navigation refactors, onboarding flows, analytics widgets, and lead management enhancements',
+      'Delivered <strong>50+ features</strong> as a core React Native engineer on Profolio\'s upgrade from v2.0 to v3.0, spanning navigation refactors, onboarding flows, analytics widgets, and lead management enhancements',
       'Built a BI-driven <strong>Overview Page</strong> with widgets for top locations/properties by leads and impressions, active property snapshots, agent responsiveness, and TruBroker badge progress',
       'Designed and shipped a first-time user onboarding sheet and flows that improved completion by around <strong>40%</strong>',
       'Implemented <strong>portal-aware login</strong> and session logic for UAE and Egypt agents, centralising market-specific configuration',

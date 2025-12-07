@@ -12,7 +12,7 @@ const ExperiencePage = () => {
             <h2 className={styles.sectionTitle}>
               Bayut / Dubizzle Labs
               <span style={{ fontSize: '0.9rem', fontWeight: 'normal', marginLeft: '1rem', color: 'var(--accent-color)' }}>
-                Jun 2024 – Present
+                Jun 2023 – Present
               </span>
             </h2>
             <div style={{ fontSize: '0.95rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
@@ -20,7 +20,7 @@ const ExperiencePage = () => {
             </div>
             <ul className={styles.paragraph} style={{ lineHeight: '1.8' }}>
               <li>
-                Delivered <strong>30+</strong> production features as a core React Native engineer on Profolio&apos;s upgrade from v2.0 to v3.0,
+                Delivered <strong>50+</strong> production features as a core React Native engineer on Profolio&apos;s upgrade from v2.0 to v3.0,
                 including BI-driven analytics widgets, onboarding flows that improved completion by <strong>40%</strong>, and lead management
                 enhancements that increased engagement by <strong>15%</strong>
               </li>
@@ -35,7 +35,7 @@ const ExperiencePage = () => {
             <h2 className={styles.sectionTitle}>
               Devsinc
               <span style={{ fontSize: '0.9rem', fontWeight: 'normal', marginLeft: '1rem', color: 'var(--accent-color)' }}>
-                Aug 2023 – May 2024
+                Aug 2022 – May 2023
               </span>
             </h2>
             <div style={{ fontSize: '0.95rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
