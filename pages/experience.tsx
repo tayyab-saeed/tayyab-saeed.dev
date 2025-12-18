@@ -12,7 +12,7 @@ const ExperiencePage = () => {
             <h2 className={styles.sectionTitle}>
               Bayut / Dubizzle Labs
               <span style={{ fontSize: '0.9rem', fontWeight: 'normal', marginLeft: '1rem', color: 'var(--accent-color)' }}>
-                Jun 2023 – Present
+                Jun 2024 – Present
               </span>
             </h2>
             <div style={{ fontSize: '0.95rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
@@ -35,7 +35,7 @@ const ExperiencePage = () => {
             <h2 className={styles.sectionTitle}>
               Devsinc
               <span style={{ fontSize: '0.9rem', fontWeight: 'normal', marginLeft: '1rem', color: 'var(--accent-color)' }}>
-                Aug 2022 – May 2023
+                Aug 2023 – May 2024
               </span>
             </h2>
             <div style={{ fontSize: '0.95rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
